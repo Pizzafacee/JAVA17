@@ -10,6 +10,8 @@ public class TwoArrayTest {
         int[][] ints2 = new int[3][];
         int[][] ints3 = new int[3][4];
 
+        int[] x,y[];
+
         //取值
         int i = ints1[1][1];
         System.out.println(i);
