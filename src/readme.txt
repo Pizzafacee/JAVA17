@@ -6,3 +6,9 @@ chapter02
 
 chapter03
 流程控制
+
+project01
+记账软件
+
+chapter04
+数组
