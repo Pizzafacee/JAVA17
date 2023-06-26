@@ -23,6 +23,32 @@ public class Exercise02 {
         //遍历输出
         for (int i = 0; i < ints.length; i++) {
             for (int j = 0; j < ints[i].length; j++) {
+                System.out.print(ints[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        //yangHuiAngle
+        yangHuiAngle();
+    }
+
+    //比较简洁的写法
+    public static void yangHuiAngle() {
+        //初始化数组
+        int[][] ints = new int[10][];
+        for (int i = 0; i < 10; i++) {
+            //初始化内层
+            ints[i] = new int[i + 1];
+            //对首末端赋值1
+            ints[i][0] = ints[i][i] = 1;
+            //对中间数赋值
+            for (int j = 1; j < ints[i].length - 1; j++) {
+                ints[i][j] = ints[i - 1][j - 1] + ints[i - 1][j];
+            }
+        }
+        //遍历二维数组
+        for (int i = 0; i < ints.length; i++) {
+            for (int j = 0; j < ints[i].length; j++) {
                 System.out.print(ints[i][j]+" ");
             }
             System.out.println();
