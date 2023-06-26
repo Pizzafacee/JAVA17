@@ -12,3 +12,6 @@ project01
 
 chapter04
 数组
+
+chapter05
+数组工具类 和数组相关的异常
