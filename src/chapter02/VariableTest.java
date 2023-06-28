@@ -44,5 +44,7 @@ public class VariableTest {
 
         char c4 = 97;
         System.out.println(c4);
+        double d = 1.0/3;
+        System.out.println(d);
     }
 }
