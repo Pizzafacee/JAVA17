@@ -19,3 +19,6 @@ chapter05
 
 chapter06
 面向对象
+
+chapter07
+方法
