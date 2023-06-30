@@ -1,5 +1,5 @@
 package chapter07;
-
+//方法重载
 public class OverLoadTest {
     public static void main(String[] args) {
         OverLoadTest overLoadTest = new OverLoadTest();
@@ -11,8 +11,15 @@ public class OverLoadTest {
         //int anInt = ints[0];
     }
 
-    public void add(int a ,int b){}
-    
+    public void add(double a, int b) {
+    }
+    //public void add(int[] ints){} 数组类型的形参与可变参数在编译时被认为是一种东西，不构成重载
+
+    public void add(int a, double b) {
+    }
+
+    public void add(int a, int b) {
+    }
 
     public String joinString(String... strings) {
         String string = "";
