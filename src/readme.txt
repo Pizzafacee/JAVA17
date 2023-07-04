@@ -29,3 +29,6 @@ chapter08
 chapter09
 三大特性之封装性
 
+chapter10
+构造器
+
