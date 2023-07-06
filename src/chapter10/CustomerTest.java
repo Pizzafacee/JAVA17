@@ -10,5 +10,6 @@ public class CustomerTest {
         account.withdraw(2000);
         String customerInfo = customer.getCustomerInfo();
         System.out.println(customerInfo);
+
     }
 }
