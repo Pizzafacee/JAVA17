@@ -6,9 +6,10 @@ public class Person {
 
     public void eat(){
         System.out.println("吃饭");
+        sleep();
     }
 
-    public void sleep(){
+    private void sleep(){
         System.out.println("睡觉");
     }
 
