@@ -7,4 +7,20 @@ public class CheckAccount extends Account {
         super(id, balance, annualInterestRate);
         this.overdraft = overdraft;
     }
+
+    public double getOverdraft() {
+        return overdraft;
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        if (amount <= getBalance()) {
+            super.withdraw(amount);
+        } else if (amount <= getBalance() + overdraft) {
+            overdraft -= amount - getBalance();
+            super.withdraw(getBalance());
+        } else {
+            System.out.println("信用额度不足");
+        }
+    }
 }
