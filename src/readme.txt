@@ -46,3 +46,6 @@ chapter13
 
 chapter14
 面向对象之 多态
+
+chapter15
+equals()和toString()方法
