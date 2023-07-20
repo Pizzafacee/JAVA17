@@ -1,4 +1,5 @@
 package chapter07;
+
 //方法重载
 public class OverLoadTest {
     public static void main(String[] args) {
@@ -19,6 +20,10 @@ public class OverLoadTest {
     }
 
     public void add(int a, int b) {
+    }
+
+    public String add(int a, long b) {
+        return "";
     }
 
     public String joinString(String... strings) {
