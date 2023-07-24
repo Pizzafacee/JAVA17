@@ -53,3 +53,9 @@ equals()和toString()方法
 
 chapter16
 static 关键字
+
+chapter17
+单例模式
+
+chapter18
+代码块
