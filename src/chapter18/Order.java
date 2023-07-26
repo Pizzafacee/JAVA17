@@ -8,8 +8,7 @@ public class Order {
         x--;
     }
 
-    //属性赋值的顺序
-    private int orderId = 1;
+
     {
         orderId = 2;
     }
