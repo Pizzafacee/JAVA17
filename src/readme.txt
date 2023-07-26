@@ -65,3 +65,6 @@ final关键字 final 可以用来修饰 类 方法 变量
 final修饰类 表示此类不能被继承
 final修饰方法 表示此方法不能被重写
 final修饰变量 表示此变量不能被修改
+
+chapter20
+抽象类 abstract
