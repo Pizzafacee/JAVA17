@@ -1,9 +1,7 @@
 package chaptertest;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
-import java.io.Serializable;
 import java.util.Date;
 
 public class Order {
@@ -77,5 +75,6 @@ class Test{
         Order order = new Order("11111", "2222", 333, "332323", 2345, new Date());
         String s = JSONObject.toJSONString(order);
         System.out.println(s);
+        String str = "{\"no\":\"2222\",\"orderTypeID\":\"11111\",\"rowNo\":333,\"sapCode\":\"332323\",\"shipDate\":1690354062750,\"shipQty\":2345}";
     }
 }
