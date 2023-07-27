@@ -6,4 +6,6 @@ public abstract class GeometricObject {
 
     //求周长
     public abstract double findLong();
+
+    private static void see(){}
 }
