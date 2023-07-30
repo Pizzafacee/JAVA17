@@ -49,7 +49,6 @@ chapter14
 
 chapter15
 equals()和toString()方法
-+
 
 chapter16
 static 关键字
@@ -71,3 +70,16 @@ chapter20
 
 chapter21
 模板方法的设计模式
+
+chapter22
+接口
+
+chapter23
+内部类
+
+chapter24
+枚举
+
+chapter25
+注解
+

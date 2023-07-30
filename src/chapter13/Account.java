@@ -5,6 +5,10 @@ public class Account {
     private double balance;
     private double annualInterestRate;
 
+    public static void  method(String s){
+        System.out.println(s);
+    }
+
     public Account(String id, double balance, double annualInterestRate) {
         this.id = id;
         this.balance = balance;

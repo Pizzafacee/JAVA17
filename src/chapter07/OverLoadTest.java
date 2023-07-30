@@ -8,6 +8,10 @@ public class OverLoadTest {
         System.out.println(s);
     }
 
+    public static void add(String s){};
+
+    public static void add(String s,long a){};
+
     public void add(int... ints) {
         //int anInt = ints[0];
     }

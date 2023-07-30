@@ -16,6 +16,9 @@ public class CheckAccount extends Account {
         this.overdraft = overdraft;
     }
 
+//   public static void  method(String a){
+//       System.out.println("ni"+a);
+//   }
     //重写取款的方法
     @Override
     public boolean withdraw(double amount) {
