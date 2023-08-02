@@ -12,4 +12,8 @@ public class BelowZeroException extends RuntimeException {
         super(message);
         this.code = code;
     }
+
+    public BelowZeroException(String message) {
+        super(message);
+    }
 }
