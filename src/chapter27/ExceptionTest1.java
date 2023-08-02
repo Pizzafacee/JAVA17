@@ -53,6 +53,7 @@ public class ExceptionTest1 {
             byte[] bytes = new byte[1024 * 1024 * 100];
         } catch (Error error) {
             error.printStackTrace();
+            System.out.println("oom错误也会执行catch吗？");
         } finally {
             System.out.println("oom错误也会执行finally语句吗？");
         }
