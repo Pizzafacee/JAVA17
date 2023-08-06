@@ -3,9 +3,15 @@ package chapter14;
 public class AnimalTest {
     public static void main(String[] args) {
         AnimalTest animalTest = new AnimalTest();
-        animalTest.adopt(new Cat("绿色", 4));
-        animalTest.adopt(new Dog("蓝色",4));
+//        animalTest.adopt(new Cat("绿色", 4));
+//        animalTest.adopt(new Dog("蓝色",4));
+
+        Animal a = new Cat("lanse",3 );
+        a.eat();
     }
+
+
+
 
     public void adopt(Animal animal) {
         animal.eat();

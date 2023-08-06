@@ -25,11 +25,11 @@ public class Animal {
         this.legs = legs;
     }
 
-    public void eat(){
-        System.out.println("吃饭");
+    public void eat() {
+        System.out.println("吃饭" + color);
     }
 
-    public void jump(){
+    public void jump() {
         System.out.println("跳高");
     }
 }

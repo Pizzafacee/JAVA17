@@ -1,6 +1,6 @@
 package project03.conan.practice.team.domain;
 
-public class Designer extends Employee {
+public class Designer extends Programmer {
     private double bonus;
 
     public Designer() {

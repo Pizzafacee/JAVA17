@@ -18,5 +18,14 @@ public class PersonTest {
         person1.addAge(3);
         System.out.println(person1.age);
 
+        Cat cat = Person.cat;
+        System.out.println(cat.getName());
+        cat.setName("damao");
+        System.out.println(cat.getName());
+
+//        Cat cat = Person.getCat();
+//        System.out.println(cat.getName());
+//        cat.setName("damao");
+//        System.out.println(cat);
     }
 }

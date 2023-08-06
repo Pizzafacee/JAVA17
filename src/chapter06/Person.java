@@ -1,7 +1,8 @@
 package chapter06;
 
 public class Person {
-    String name;
+  static   Cat cat = new Cat("xiaomao");
+  private   String name;
     int age;
     char gender;
 
@@ -15,5 +16,9 @@ public class Person {
 
     public void addAge(int addAge) {
         age += addAge;
+    }
+
+    public static Cat getCat() {
+        return cat;
     }
 }

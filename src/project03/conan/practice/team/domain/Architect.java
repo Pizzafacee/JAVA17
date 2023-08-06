@@ -17,4 +17,12 @@ public class Architect extends Designer {
                 "stock='" + stock + '\'' +
                 '}';
     }
+
+    public String getStock() {
+        return stock;
+    }
+
+    public void setStock(String stock) {
+        this.stock = stock;
+    }
 }

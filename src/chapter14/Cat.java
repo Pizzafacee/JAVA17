@@ -4,11 +4,11 @@ public class Cat extends Animal {
     public Cat(String color, int legs) {
         super(color, legs);
     }
-
-    @Override
-    public void eat() {
-        System.out.println("猫爱吃猫粮");
-    }
+//
+//    @Override
+//    public void eat() {
+//        System.out.println("猫爱吃猫粮");
+//    }
 
     @Override
     public void jump() {
