@@ -13,16 +13,9 @@ public class WrapperTest {
         int i1 = 3;
         int i2 = Integer.parseInt("222");
 
-        Integer a = 3;
-        Integer b = 3;
-        System.out.println(a==b);
+        Integer a = 128;
+        Integer b = 128;
+        System.out.println(a == b);
 
-        String s1 = String.valueOf(3);
-        String s11 = s1;
-        String s111 = s11;
-        String s1111 = s111;
-        String s11111 = s1111;
-        String s111111 = s11111;
-        String s = s111111;
     }
 }
