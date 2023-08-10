@@ -32,56 +32,56 @@ public class JsonTest {
 //        System.out.println("o=" + o);
 //        System.out.println(key);
 
-        String json = "{\n" +
-                "    \"data\": {\n" +
-                "        \"header\": [\n" +
-                "  {\n" +
-                "            \"No\": \"SO2306020028\",\n" +
-                "            \"OrderTypeCode\": \"93\",\n" +
-                "            \"details\": [\n" +
-                "                {\n" +
-                "                    \"RowNo\": \"1\",\n" +
-                "                    \"SAPCode\": \"P6C1FGH120RR012005\",\n" +
-                "                    \"ShipQty\": \"20\",\n" +
-                "                    \"ShipDate\": \"2023-07-26\"\n" +
-                "                },\n" +
-                "    {\n" +
-                "                    \"RowNo\": \"2\",\n" +
-                "                    \"SAPCode\": \"P6C1FXQGH120RR2036\",\n" +
-                "                    \"ShipQty\": \"20\",\n" +
-                "                    \"ShipDate\": \"2023-07-26\"\n" +
-                "                }\n" +
-                "     ]\n" +
-                "        },\n" +
-                "  {\n" +
-                "            \"No\": \"SO2307070165\",\n" +
-                "            \"OrderTypeCode\": \"93\",\n" +
-                "            \"details\": [\n" +
-                "                {\n" +
-                "                    \"RowNo\": \"1\",\n" +
-                "                    \"SAPCode\": \"P6C0HXQH100H561005\",\n" +
-                "                    \"ShipQty\": \"10\",\n" +
-                "                    \"ShipDate\": \"2023-07-10\"\n" +
-                "                }\n" +
-                "     ]\n" +
-                "        }\n" +
-                "    ]\n" +
-                "  \n" +
-                "   }\n" +
-                "}";
+//        String json = "{\n" +
+//                "    \"data\": {\n" +
+//                "        \"header\": [\n" +
+//                "  {\n" +
+//                "            \"No\": \"SO2306020028\",\n" +
+//                "            \"OrderTypeCode\": \"93\",\n" +
+//                "            \"details\": [\n" +
+//                "                {\n" +
+//                "                    \"RowNo\": \"1\",\n" +
+//                "                    \"SAPCode\": \"P6C1FGH120RR012005\",\n" +
+//                "                    \"ShipQty\": \"20\",\n" +
+//                "                    \"ShipDate\": \"2023-07-26\"\n" +
+//                "                },\n" +
+//                "    {\n" +
+//                "                    \"RowNo\": \"2\",\n" +
+//                "                    \"SAPCode\": \"P6C1FXQGH120RR2036\",\n" +
+//                "                    \"ShipQty\": \"20\",\n" +
+//                "                    \"ShipDate\": \"2023-07-26\"\n" +
+//                "                }\n" +
+//                "     ]\n" +
+//                "        },\n" +
+//                "  {\n" +
+//                "            \"No\": \"SO2307070165\",\n" +
+//                "            \"OrderTypeCode\": \"93\",\n" +
+//                "            \"details\": [\n" +
+//                "                {\n" +
+//                "                    \"RowNo\": \"1\",\n" +
+//                "                    \"SAPCode\": \"P6C0HXQH100H561005\",\n" +
+//                "                    \"ShipQty\": \"10\",\n" +
+//                "                    \"ShipDate\": \"2023-07-10\"\n" +
+//                "                }\n" +
+//                "     ]\n" +
+//                "        }\n" +
+//                "    ]\n" +
+//                "  \n" +
+//                "   }\n" +
+//                "}";
 
 
-        Result result = JSON.parseObject(json, Result.class);
-        List<String> sapCodeList = new ArrayList<>();
-        Data data = result.getData();
-        List<Header> headerList = data.getHeader();
-        for (Header header : headerList) {
-            List<Details> details = header.getDetails();
-            for (Details detail : details) {
-                String sapCode = detail.getSAPCode();
-                sapCodeList.add(sapCode);
-            }
-        }
-        System.out.println(sapCodeList);
+//        Result result = JSON.parseObject(json, Result.class);
+//        List<String> sapCodeList = new ArrayList<>();
+//        Data data = result.getData();
+//        List<Header> headerList = data.getHeader();
+//        for (Header header : headerList) {
+//            List<Details> details = header.getDetails();
+//            for (Details detail : details) {
+//                String sapCode = detail.getSAPCode();
+//                sapCodeList.add(sapCode);
+//            }
+//        }
+//        System.out.println(sapCodeList);
     }
 }

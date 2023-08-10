@@ -2,7 +2,6 @@ package chaptertest;
 
 
 import java.util.List;
-
 public class Data
 {
     private List<Header> header;
@@ -13,8 +12,4 @@ public class Data
     public List<Header> getHeader(){
         return this.header;
     }
-
-
 }
-
-
