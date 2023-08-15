@@ -100,3 +100,9 @@ chapter30
 
 chapter31
 comparable和comparator
+
+chapter32
+其他API和方法 Math类 BigInteger类 BigDecimal类 Random类
+
+chapter33
+集合
