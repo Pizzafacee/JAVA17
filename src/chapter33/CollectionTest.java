@@ -19,5 +19,9 @@ public class CollectionTest {
         collection.addAll(collection2);
         collection.contains("a");
         boolean b = collection.containsAll(collection2);
+        Integer[] integers = new Integer[0];
+        ArrayList<Object> objects = new ArrayList<>();
+        System.out.println(objects);
+        System.out.println(objects.size());
     }
 }
