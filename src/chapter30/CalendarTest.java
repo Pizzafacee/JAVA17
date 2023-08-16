@@ -2,6 +2,7 @@ package chapter30;
 
 import org.junit.Test;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -10,11 +11,15 @@ public class CalendarTest {
     public void test01() {
         Calendar calendar = Calendar.getInstance();
         Calendar instance = Calendar.getInstance();
-
-        calendar.add(Calendar.DATE,-2);
+        calendar.add(Calendar.DATE,-1);
+        calendar.set(Calendar.HOUR_OF_DAY,23);
+        calendar.set(Calendar.MINUTE,59);
+        calendar.set(Calendar.SECOND,59);
         Date time = calendar.getTime();
-        System.out.println(calendar==instance);
-        System.out.println(time);
+        SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String format = s.format(time);
+        //System.out.println(calendar==instance);
+        System.out.println(format);
     }
 
     public static void main(String[] args) {

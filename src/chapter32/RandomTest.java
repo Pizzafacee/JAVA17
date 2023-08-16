@@ -24,41 +24,40 @@ public class RandomTest {
         //System.out.println(s);
     }
 
-    class Person{
-        Date date;
-        String name;
+}
+class Person{
+    Date date;
+    String name;
 
-        public Person(Date date, String name) {
-            this.date = date;
-            this.name = name;
-        }
-
-        public Person() {
-        }
-
-        public Date getDate() {
-            return date;
-        }
-
-        public void setDate(Date date) {
-            this.date = date;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        @Override
-        public String toString() {
-            return "Person{" +
-                    "date=" + date +
-                    ", name='" + name + '\'' +
-                    '}';
-        }
+    public Person(Date date, String name) {
+        this.date = date;
+        this.name = name;
     }
 
+    public Person() {
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "date=" + date +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

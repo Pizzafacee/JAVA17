@@ -1,6 +1,7 @@
 package chapter02;
 
 import com.sun.security.jgss.GSSUtil;
+import org.junit.Test;
 
 //变量
 public class VariableTest {
@@ -46,5 +47,11 @@ public class VariableTest {
         System.out.println(c4);
         double d = 1.0/3;
         System.out.println(d);
+
+    }
+    @Test
+    public void test(){
+        String a = "a";
+        //System.out.println((char)a);
     }
 }

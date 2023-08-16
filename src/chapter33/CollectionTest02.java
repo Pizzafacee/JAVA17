@@ -69,4 +69,42 @@ public class CollectionTest02 {
         }
 
     }
+
+    @Test
+    public void test3() {
+        LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put("a", "1");
+        linkedHashMap.put("b", "2");
+        linkedHashMap.put("c", "3");
+        linkedHashMap.put("d", "4");
+        linkedHashMap.put("a", "9");
+        linkedHashMap.put("wangk","dazedang");
+        linkedHashMap.put("c", "7");
+        linkedHashMap.put("d", "6");
+        for (Map.Entry<String, String> entry : linkedHashMap.entrySet()) {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+    }
+
+    @Test
+    public void test4(){
+        Map<String, String> hashMap = new HashMap<>();
+        hashMap.put("a","1");
+        hashMap.put("b","2");
+        hashMap.put("c","3");
+        hashMap.put("wangk","dazedang");
+        hashMap.put("d","4");
+        hashMap.put("No2","lisi");
+//        for (Map.Entry<String, String> entry : hashMap.entrySet()) {
+//            System.out.println(entry.getKey());
+//            System.out.println(entry.getValue());
+//        }
+//        Set<String> strings = hashMap.keySet();
+//        for (String key: strings) {
+//            String s = hashMap.get(key);
+//            System.out.println(key + "=="+s);
+//        }
+        System.out.println(hashMap);
+    }
 }
