@@ -10,7 +10,8 @@ public class CalendarTest {
     public void test01() {
         Calendar calendar = Calendar.getInstance();
         Calendar instance = Calendar.getInstance();
-        //calendar.add(Calendar.YEAR,2);
+
+        calendar.add(Calendar.DATE,-2);
         Date time = calendar.getTime();
         System.out.println(calendar==instance);
         System.out.println(time);
