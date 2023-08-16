@@ -4,10 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class JsonTest {
     @Test
@@ -20,6 +17,12 @@ public class JsonTest {
 //        Student student = new Student();
 //        String str = JSON.toJSONString(student);
 //        System.out.println(str);
+        Date date = new Date();
+        String s = JSON.toJSONString(date);
+        System.out.println(s);
+        //JSONObject jsonObject = JSON.parseObject(s);
+        //System.out.println(jsonObject);
+
 //
 //        Map map = new HashMap();
 //        HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
