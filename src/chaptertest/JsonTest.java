@@ -17,9 +17,9 @@ public class JsonTest {
 //        Student student = new Student();
 //        String str = JSON.toJSONString(student);
 //        System.out.println(str);
-        Date date = new Date();
-        String s = JSON.toJSONString(date);
-        System.out.println(s);
+//        Date date = new Date();
+//        String s = JSON.toJSONString(date);
+//        System.out.println(s);
         //JSONObject jsonObject = JSON.parseObject(s);
         //System.out.println(jsonObject);
 
@@ -86,5 +86,9 @@ public class JsonTest {
 //            }
 //        }
 //        System.out.println(sapCodeList);
+        String s = JSON.toJSONString(new Student());
+        System.out.println(s);
+        Student student = JSON.parseObject(s, Student.class);
+        System.out.println(student.getData());
     }
 }
