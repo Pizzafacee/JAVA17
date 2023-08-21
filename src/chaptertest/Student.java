@@ -1,8 +1,9 @@
 package chaptertest;
 
 public class Student {
-    String name = "xingzhengjuan";
+    String name="xingzhenjuan" ;
     int age = 10;
+    private Data data;
 
     public Student(String name, int age) {
         this.name = name;
@@ -21,6 +22,14 @@ public class Student {
 
     public int getAge() {
         return age;
+    }
+
+    public Data getData() {
+        return data;
+    }
+
+    public void setData(Data data) {
+        this.data = data;
     }
 
     public void setAge(int age) {
