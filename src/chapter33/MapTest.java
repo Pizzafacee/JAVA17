@@ -3,6 +3,8 @@ package chapter33;
 import org.junit.Test;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class MapTest {
     @Test
@@ -13,6 +15,7 @@ public class MapTest {
         objectObjectHashMap.put(null, 2);
         System.out.println(objectObjectHashMap.get(null));
         HashMap<Object, Object> objectObjectHashMap2 = new HashMap<>();
+        //Set<Map.Entry<Object, Object>> entries = objectObjectHashMap2.entrySet();
         objectObjectHashMap2.put(3, 3);
         objectObjectHashMap2.put(4, "1");
         objectObjectHashMap.putAll(objectObjectHashMap2);
