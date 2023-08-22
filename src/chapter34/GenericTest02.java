@@ -2,6 +2,7 @@ package chapter34;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //泛型的通配符
@@ -38,6 +39,21 @@ public class GenericTest02 {
     public void method4(List<? super Fatherr> list) {
     }
 
+    public void method5(Order<? extends Fatherr> order) {
+        //order.setT(new Fatherr() );
+        order.setT(null);
+        // order.setT(new Son());
+        // order.setT();
+        Fatherr t = order.getT();
+    }
+
+    public void method6(Order<? super Fatherr> order) {
+        order.setT(new Fatherr());
+        order.setT(new Son());
+        //order.setT(new Grandfather());
+        Object t = order.getT();
+    }
+
     @Test
     public void test2() {
         List<Son> sons = null;
@@ -55,6 +71,7 @@ public class GenericTest02 {
         //list.add(new Object());错误的
         list = sons;
         //list.add(new Son());错误的
+        method3(new ArrayList<>());
     }
 
     @Test
