@@ -9,6 +9,7 @@ public class ArrayListStructure {
     @Test
     public void test1() {
         List<String> objects = new ArrayList<>();
+        objects.add("3");
     }
 
 }
