@@ -196,6 +196,18 @@ public class FileTest {
         file.delete();
     }
 
+    /**
+     * 将一个文件目录的名称封装到MyFile类中
+     */
+    public MyFile toMyFile(File file) {
+        MyFile myFile = new MyFile();
+        if (file.isFile()) {
+            myFile.setFileName(file.getName());
+        }
+        return myFile;
+    }
+
+
     @Test
     public void test13() {
         File file = new File("D:\\222\\(修订版)bec中级全套光盘");
