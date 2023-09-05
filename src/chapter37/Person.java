@@ -39,4 +39,8 @@ public class Person {
     public void show() {
         System.out.println(this);
     }
+
+    public String info() {
+        return "info";
+    }
 }
