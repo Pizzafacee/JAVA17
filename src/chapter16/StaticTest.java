@@ -2,6 +2,11 @@ package chapter16;
 
 public class StaticTest {
     private static String name;
+    public final static String INTEREST;
+
+    static {
+        INTEREST = "football";
+    }
 
     {
         name = "zhangsan";
@@ -12,9 +17,7 @@ public class StaticTest {
     }
 
     public static void main(String[] args) {
-        StaticTest staticTest = new StaticTest();
-        String aStatic = staticTest.getStatic();
-        System.out.println(aStatic);
+        new StaticTest();
         System.out.println(StaticTest.name);
     }
 }
