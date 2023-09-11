@@ -3,10 +3,8 @@ package chapter37;
 import org.junit.Test;
 import project03.conan.practice.team.view.TSUtility;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.*;
 
 public class PersonReflection {
     @Test
@@ -33,7 +31,42 @@ public class PersonReflection {
         Method show = personClass.getMethod("show");
         Object invoke = show.invoke(person);
         Method info = personClass.getMethod("info");
-        String invoke1 = (String)info.invoke(person);
+        String invoke1 = (String) info.invoke(person);
         System.out.println(invoke1);
+    }
+
+    @Test
+    public void test2() throws Exception {
+        Class<Student> studentClass = Student.class;
+        Constructor<Student> constructor = studentClass.getConstructor();
+        constructor.setAccessible(true);
+        Student student = constructor.newInstance();
+        Field name = studentClass.getSuperclass().getDeclaredField("name");
+        name.setAccessible(true);
+        name.set(student,"zhangsan");
+        System.out.println(name.get(student));
+    }
+
+    @Test
+    public void test3(){
+        Class<Student> studentClass = Student.class;
+        Annotation[] annotations = studentClass.getAnnotations();
+        for (Annotation annot : annotations) {
+            System.out.println(annot.annotationType().getName());
+            Method[] fields = annot.annotationType().getMethods();
+            for (Method f : fields) {
+                System.out.println(f.getName());
+            }
+        }
+    }
+
+    @Test
+    public void test4(){
+        Class<Student> studentClass = Student.class;
+        Type genericSuperclass = studentClass.getGenericSuperclass();
+        ParameterizedType genericSuperclass1 = (ParameterizedType) genericSuperclass;
+        Type[] actualTypeArguments = genericSuperclass1.getActualTypeArguments();
+        Type actualTypeArgument = actualTypeArguments[0];
+        System.out.println(actualTypeArgument.getTypeName());
     }
 }

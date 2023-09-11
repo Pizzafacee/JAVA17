@@ -9,6 +9,7 @@ public class EncapsulationTest01 {
         Animal animal = new Animal();
         animal.name = "龙鬼";
         animal.legs = 3;
+        animal.eggs();
         animal.eat();
 
         //Animal02 animal02 = new Animal02() 缺省 不能跨包访问

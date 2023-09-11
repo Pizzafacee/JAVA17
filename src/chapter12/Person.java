@@ -9,6 +9,10 @@ public class Person {
         sleep();
     }
 
+    public Person() {
+        System.out.println(this);
+    }
+
     private void sleep(){
         System.out.println("睡觉");
     }
