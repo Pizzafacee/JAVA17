@@ -15,6 +15,9 @@ public class ArrayListStructure {
 
         List<String> strings = new LinkedList<>();
         String s = strings.get(9);
+
+        LinkedList<Object> objects1 = new LinkedList<>();
+
     }
 
 }
