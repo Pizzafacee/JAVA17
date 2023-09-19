@@ -17,7 +17,11 @@ public class ArrayListStructure {
         String s = strings.get(9);
 
         LinkedList<Object> objects1 = new LinkedList<>();
+        objects1.add(1);
+        Object o = objects1.get(0);
 
+        LinkedList link = new LinkedList();
+        Object o1 = link.get(2);
     }
 
 }
