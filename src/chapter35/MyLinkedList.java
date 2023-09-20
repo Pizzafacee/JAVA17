@@ -48,4 +48,54 @@ public class MyLinkedList<T> {
     public int size() {
         return size;
     }
+
+    public int indexOf(T t) {
+        int index = 0;
+        if (t == null) {
+            for (Node<T> node = first; node != null; node = node.after) {
+                if (node.t == null) {
+                    return index;
+                }
+                index++;
+            }
+        } else {
+            for (Node<T> node = first; node != null; node = node.after) {
+                if (t.equals(node.t)) {
+                    return index;
+                }
+                index++;
+            }
+        }
+
+        return -1;
+    }
+
+    //根据索引删除一个元素
+    public T remove(int index) {
+        Node<T> node = node(index);
+        Node<T> after = node.after;
+        Node<T> before = node.before;
+        if (before == null) {
+
+        }
+
+
+    }
+
+    //根据索引获得一个node
+    private Node<T> node(int index) {
+        Node<T> result;
+        if (index < size >> 1) {
+            result = first;
+            for (int i = 0; i < index; i++) {
+                result = result.after;
+            }
+        } else {
+            result = last;
+            for (int i = size; i > index; i--) {
+                result = result.before;
+            }
+        }
+        return result;
+    }
 }

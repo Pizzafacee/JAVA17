@@ -22,6 +22,11 @@ public class ArrayListStructure {
 
         LinkedList link = new LinkedList();
         Object o1 = link.get(2);
+
+        Object remove = link.remove();
+        link.remove(1);
+        link.add(null);
+        link.add(null);
     }
 
 }
