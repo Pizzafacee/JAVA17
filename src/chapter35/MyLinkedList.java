@@ -72,13 +72,27 @@ public class MyLinkedList<T> {
 
     //根据索引删除一个元素
     public T remove(int index) {
+
         Node<T> node = node(index);
+        final T t = node.t;
         Node<T> after = node.after;
         Node<T> before = node.before;
         if (before == null) {
-
+            first = after;
+        } else {
+            before.after = after;
+            node.before = null;
         }
 
+        if (after == null) {
+            last = before;
+        } else {
+            after.before = before;
+            node.after = null;
+        }
+        node.t = null;
+        size--;
+        return t;
 
     }
 

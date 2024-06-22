@@ -3,6 +3,7 @@ package chapter35;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -27,6 +28,13 @@ public class ArrayListStructure {
         link.remove(1);
         link.add(null);
         link.add(null);
+
+        HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
+        objectObjectHashMap.put(1, 2);
+
+        objectObjectHashMap.get(1);
+
+
     }
 
 }
