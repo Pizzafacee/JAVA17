@@ -60,6 +60,7 @@ public class LambdaTest {
 
     @Test
     public void test9() {
+
         Consumer<String> consumer = System.out::println;
         consumer.accept("a");
     }
@@ -69,7 +70,8 @@ public class LambdaTest {
         String a = "a";
         Predicate<String> predicate = a::equals;
         boolean a1 = predicate.test("b");
-        System.out.println(a1);
+        System.out.println();
+        System.out.println();
     }
 
     @Test
